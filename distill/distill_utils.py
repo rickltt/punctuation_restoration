@@ -90,9 +90,16 @@ H_256=[{"layer_T":0, "layer_S":0, "feature":"hidden", "loss":"hidden_mse", "weig
                 {"layer_T":10, "layer_S":5, "feature":"hidden", "loss":"hidden_mse", "weight":1, "proj":["linear",256,768]},
                 {"layer_T":12, "layer_S":6, "feature":"hidden", "loss":"hidden_mse", "weight":1, "proj":["linear",256,768]}]
 
+H_768=[{"layer_T":0, "layer_S":0, "feature":"hidden", "loss":"hidden_mse", "weight":1, "proj":["linear",768,768]},
+                {"layer_T":2, "layer_S":1, "feature":"hidden", "loss":"hidden_mse", "weight":1, "proj":["linear",768,768]},
+                {"layer_T":4, "layer_S":2, "feature":"hidden", "loss":"hidden_mse", "weight":1, "proj":["linear",768,768]},
+                {"layer_T":6, "layer_S":3, "feature":"hidden", "loss":"hidden_mse", "weight":1, "proj":["linear",768,768]},
+                {"layer_T":8, "layer_S":4, "feature":"hidden", "loss":"hidden_mse", "weight":1, "proj":["linear",768,768]},
+                {"layer_T":10, "layer_S":5, "feature":"hidden", "loss":"hidden_mse", "weight":1, "proj":["linear",768,768]},
+                {"layer_T":12, "layer_S":6, "feature":"hidden", "loss":"hidden_mse", "weight":1, "proj":["linear",768,768]}]
+
 matches = {
     "h312":H_312,
     "h256":H_256,
-    "h312_bert":H_312,
-    "h256_bert":H_256
+    "h768":H_768
 }

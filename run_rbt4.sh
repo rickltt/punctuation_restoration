@@ -1,11 +1,11 @@
 #!/bin/bash
 DATA_DIR='./data/cmrpt'
-MODEL_NAME_OR_PATH='./distill/bert/h256'
-OUTPUT_DIR='/disc1/models_output/pr_outputs/output_h256'
-CACHE='/disc1/models_output/pr_outputs/output_h256/cache'
+MODEL_NAME_OR_PATH='/disc1/models/rbt4'
+OUTPUT_DIR='/disc1/models_output/pr_outputs/output_rbt4'
+CACHE='/disc1/models_output/pr_outputs/output_rbt4/cache'
 for seed in {1..10}
 do
-    CUDA_VISIBLE_DEVICES='1' python classifier_run.py \
+    CUDA_VISIBLE_DEVICES='1' python token_classification.py \
     --data_dir $DATA_DIR \
     --seed $seed \
     --cache_dir $CACHE \
