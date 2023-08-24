@@ -104,7 +104,7 @@ def main():
     ## Required parameters
     parser.add_argument('--data_dir', default='data/iwslt', type=str)
     parser.add_argument('--cache_dir', default='cache_dir', type=str)
-    parser.add_argument('--model_name_or_path', default="./distill/bert/h312_wiki", type=str)
+    parser.add_argument('--model_name_or_path', default="./distill/bert/h312", type=str)
     parser.add_argument("--output_dir", default='output', type=str)
     parser.add_argument('--max_seq_length', default=512, type=int)
     parser.add_argument("--per_device_train_batch_size", default=128, type=int,
