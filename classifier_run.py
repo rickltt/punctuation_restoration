@@ -1,6 +1,6 @@
-import torch
 import os
-# os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "6"
+import torch
 import argparse
 from classifier import BertForMaskClassification
 from transformers import (
@@ -102,7 +102,7 @@ def main():
     # global ltp_tokenizer
     parser = argparse.ArgumentParser()
     ## Required parameters
-    parser.add_argument('--data_dir', default='data/iwslt', type=str)
+    parser.add_argument('--data_dir', default='data/cmrpt', type=str)
     parser.add_argument('--cache_dir', default='cache_dir', type=str)
     parser.add_argument('--model_name_or_path', default="./distill/bert/h312", type=str)
     parser.add_argument("--output_dir", default='output', type=str)

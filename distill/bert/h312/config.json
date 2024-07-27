@@ -1,5 +1,5 @@
 {
-  "_name_or_path": "/disc1/models_output/pr_outputs/output_distill_312/gs100000.pkl",
+  "_name_or_path": "/disc1/models_output/pr_outputs/output_distill_312/gs80000.pkl",
   "architectures": [
     "BertModel"
   ],

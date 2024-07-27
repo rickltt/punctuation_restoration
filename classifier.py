@@ -1,5 +1,5 @@
 from transformers.models.bert.modeling_bert import *
-
+from typing import Union
 class BertForMaskClassification(BertPreTrainedModel):
     _keys_to_ignore_on_load_unexpected = [r"pooler"]
 
